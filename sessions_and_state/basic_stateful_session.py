@@ -48,7 +48,7 @@ async def main():
     )
     # new_message = "What is brandon's favorite TV show?"
     
-    for event in runner.run(
+    for event in runner.run_async(
         user_id=USER_ID,
         session_id=SESSION_ID,
         new_message=new_message,
