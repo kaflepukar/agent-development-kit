@@ -43,10 +43,11 @@ async def main():
         session_service=session_service_stateful,
     )
 
-    new_message = types.Content(
-        role="user", parts=[types.Part(text="What is Brandon's favorite TV show?")]
+    new_message = types.Content( 
+        role="user", parts=[types.Part(text="What is my favorite TV show?")]
     )
-
+    # new_message = "What is brandon's favorite TV show?"
+    
     for event in runner.run(
         user_id=USER_ID,
         session_id=SESSION_ID,
